@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+}
+        /* container com a menu de navegação dos links das páginas */
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+        
+ul li{
+    display: inline-block;
+    padding: 3px 15px;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+nav{
+    background-color: #2da6d6;
+    text-align: center;
+    padding: 10px;
+}
+        /* Começo - Animação do menu de navegação */
+.nav-bar li:hover::before{
+    width: 100%;
+}
+
+.nav-bar li::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+        /* Fim */
+.title{
+    font-size: 26px;
+}
+.conteudo-principal{
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+        /* Imagem de fundo do section do formulário */
+section{
+    padding: 20px;
+    background-image: url(../images/6106991.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.formContainer{
+    max-width: 230px;
+    background-color: #ffffffBB;
+    padding: 20px;
+    margin: auto;
+}
+
+h2{
+    font-size: 22px;
+}
+.mb{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size:px;
+}
+.mbb{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+        /* Alterando o tamanho, borda e margem dos input de texto e botões*/
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+        /* Alterando cor do texto do botão e o peso da fonte */
+input[type="submit"]{
+    color: white;
+    background-color:#2da6d6;
+    font-weight: bold;
+}
+        /* Imagem de flecha nas opções de estados do formuário */
+select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    
+}
+
+.picture1{
+    width: 260px;
+}
+
+.description{
+    display: inline-block;
+    color: white;
+    max-width: 40%;
+    margin-left: 40px;
+    text-align: left;
+}
+.description p, .description h3{
+    margin-bottom: 20px;
+    word-spacing: 5px;
+}
+.description h3{
+    font-size: 24px;
+}
+
+
